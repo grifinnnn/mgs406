@@ -20,7 +20,7 @@ def information():
     conn = mysql.connector.connect(
         host="127.0.0.1",
         user="dba",
-        password="CH3m!$try",
+        password="No",
         database="employees"
     )
     c = conn.cursor()

@@ -2,22 +2,47 @@
 <html>
   <head>
     <title>Employee Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+    </style>
   </head>
   <body>
-    <h1>Employee Registration</h1>
-    <form action="/registration" method="POST">
-      <label for="EmpID">Employee ID:</label>
-      <input type="text" id="EmpID" name="EmpID" required><br><br>
-      <label for="EmpName">Employee Name:</label>
-      <input type="text" id="EmpName" name="EmpName" required><br><br>
-      <label for="EmpGender">Gender:</label>
-      <input type="radio" id="EmpGender" name="EmpGender" value="M" checked>Male
-      <input type="radio" id="EmpGender" name="EmpGender" value="F">Female<br><br>
-      <label for="EmpPhone">Phone Number (formatted as x000):</label>
-      <input type="text" id="EmpPhone" name="EmpPhone" required><br><br>
-      <label for="EmpBdate">Birth Date (formatted as __/__/____):</label>
-      <input type="text" id="EmpBdate" name="EmpBdate" required><br><br>
-      <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+      <h1>Employee Registration</h1>
+      <form action="/registration" method="POST">
+        <div class="form-group">
+          <label for="EmpID">Employee ID:</label>
+          <input type="text" class="form-control" id="EmpID" name="EmpID" required>
+        </div>
+        <div class="form-group">
+          <label for="EmpName">Employee Name:</label>
+          <input type="text" class="form-control" id="EmpName" name="EmpName" required>
+        </div>
+        <div class="form-group">
+          <label for="EmpGender">Gender:</label>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="EmpGenderM" name="EmpGender" value="M" checked>
+            <label class="form-check-label" for="EmpGenderM">Male</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="EmpGenderF" name="EmpGender" value="F">
+            <label class="form-check-label" for="EmpGenderF">Female</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="EmpPhone">Phone Number (formatted as x000):</label>
+          <input type="text" class="form-control" id="EmpPhone" name="EmpPhone" required>
+        </div>
+        <div class="form-group">
+          <label for="EmpBdate">Birth Date (formatted as __/__/____):</label>
+          <input type="text" class="form-control" id="EmpBdate" name="EmpBdate" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://popper.js.org/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   </body>
 </html>

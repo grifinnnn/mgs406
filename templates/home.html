@@ -1,23 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Employee Management System</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to the Employee Management System!</h1>
-      <p>Please select an option:</p>
-      <ul class="list-group">
-        <li class="list-group-item"><a href="/registration">Register a new employee</a></li>
-        <li class="list-group-item"><a href="/information">View employee information</a></li>
-      </ul>
-    </div>
+<head>
+        <title>IT Helpdesk - Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="/">IT Helpdesk</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="/submit">Submit a Ticket</a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="/tickets">View Existing Tickets</a>
+                                </li>
+                        </ul>
+                        <ul class="navbar-nav">
+                                <li class="nav-item">
+                                        <a class="nav-link" href="/">Return to Homepage</a>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://popper.js.org/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  </body>
+        <div class="container mt-5">
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="card">
+                                        <div class="card-body">
+                                                <h5 class="card-title">Submit a New Ticket</h5>
+                                                <p class="card-text">If you are experiencing an issue, please submit a new ticket and our support team will get back to you as soon as possible.</p>
+                                                <a href="/submit" class="btn btn-primary">Submit a Ticket</a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="card">
+                                        <div class="card-body">
+                                                <h5 class="card-title">View Existing Tickets</h5>
+                                                <p class="card-text">If you have already submitted a ticket and would like to check on its status or update it, please view your existing tickets.</p>
+                                                <a href="/tickets" class="btn btn-primary">View Tickets</a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
 </html>

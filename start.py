@@ -80,4 +80,4 @@ if __name__ == "__main__":
     app.run(debug=True)
 
 # Close the database connection
-conn.close()
+conn.reset_session()
